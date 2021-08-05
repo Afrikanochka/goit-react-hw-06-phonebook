@@ -49,4 +49,13 @@ html {
     outline: none;
     text-decoration: none;
   }
+
+  .container {
+    margin-left: 50px;
+  }
+
+  h1, h2 {
+    margin-bottom: 10px;
+  }
+
   

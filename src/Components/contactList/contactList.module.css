@@ -16,4 +16,11 @@
     font-size: 18px;
     border-radius: 30px;
     padding: 10px;
+    border: none;
+    background-color: yellow;
+}
+
+.button:hover, .button:focus {
+    background-color: green;
+    color: white;
 }

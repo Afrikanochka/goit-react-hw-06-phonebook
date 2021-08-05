@@ -17,7 +17,7 @@ const addContact = createAction('phoneBook/add', (name, number) => {
     };
   });
   
-  const filter = createAction('phoneBook/changeFilter', filter => {
+  const changeFilter = createAction('phoneBook/changeFilter', filter => {
     return {
       payload: filter,
     };
@@ -25,4 +25,8 @@ const addContact = createAction('phoneBook/add', (name, number) => {
 
   const storageContact = createAction('phoneBook/storageContact');
 
-export default { addContact, deleteContact, filter, storageContact };
+  const contactsActions = {
+    addContact, deleteContact, changeFilter, storageContact,
+  }
+  
+  export default  contactsActions ;
