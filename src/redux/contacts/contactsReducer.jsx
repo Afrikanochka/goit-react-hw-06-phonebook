@@ -9,7 +9,7 @@ const items = createReducer([], {
 });
 
 const filter = createReducer('', {
-    [actions.filter]: (_, action) => action.payload,
+    [actions.changeFilter]: (_, action) => action.payload,
   });
   
   export default combineReducers({
